@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up - FBH</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; background: #f9f0f5; }
+    form { max-width: 400px; margin: auto; background: white; padding: 2rem; border-radius: 10px; }
+    input, button { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; }
+    button { background: #ff69b4; color: white; border: none; }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">Create Your FBH Account</h2>
+  <form onsubmit="signupUser(event)">
+    <input type="text" placeholder="Full Name" required />
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Password" required />
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <script>
+    function signupUser(e) {
+      e.preventDefault();
+      alert("Signup successful! (In real app, user data would be saved)");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
